@@ -1,0 +1,10 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# '0.8.5' is shorthand for '^0.8.5' which means greater or equal to 0.8.5 and lesser than 0.10.0
+# When you build with a new dependency, Cargo.lock gets specific patch version and wont change unless manually updated
+# 'cargo update' will update the dependencies based on the shorthand notation explained above
+rand = "0.8.5"
